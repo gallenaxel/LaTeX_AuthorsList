@@ -27,7 +27,7 @@ to convert the authors list in ```Test_names_authorlist.xlsx``` to an appropriat
 \affil[8]{Stockholm University, Stockholm, Sweden}
 ```
 
-and the pdf preview is shown as follows (also see ```overleaf_preview/authors_list_test.pdf```) :
+and the pdf preview is as follows (also see ```overleaf_preview/authors_list_test.pdf```) :
 
 
 
