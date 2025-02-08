@@ -27,8 +27,11 @@ to convert the authors list in ```Test_names_authorlist.xlsx``` to an appropriat
 \affil[8]{Stockholm University, Stockholm, Sweden}
 ```
 
+and the pdf preview is shown as follows (also see ```overleaf_preview/authors_list_test.pdf```) :
 
 
+
+<img width="564" alt="Screenshot 2025-02-08 at 18 16 47" src="https://github.com/user-attachments/assets/90894e5f-180b-453e-bed2-d8f28bd9a00b" />
 
 
 
