@@ -1,0 +1,94 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Capitalisation of section, etc.
+\addto\extrasenglish{
+  \def\subsectionautorefname{Subsection}
+}
+\addto\extrasenglish{
+  \def\sectionautorefname{Section}
+}
+\addto\extrasenglish{
+  \def\tableautorefname{Table}
+}
+\addto\extrasenglish{
+  \def\figureautorefname{Figure}
+}
+
+\usepackage{xcolor}
+
+% Boxes to be used!
+\usepackage[most]{tcolorbox}
+
+\newcommand{\recommendation}[3][]{%
+    \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=#2,#1]
+      #3
+    \end{tcolorbox}
+}
+
+\newcommand{\important}[3][]{%
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=#2,#1]
+      #3
+    \end{tcolorbox}
+}
+
+\newcommand{\example}[3][]{%
+    \begin{tcolorbox}[colback=gray!5!white,colframe=white!75!black,title=#2,#1]
+      #3
+    \end{tcolorbox}
+}
+
+\title{EPPSU Test Author list}
+\include{authors_list}
+\date{31st of March, 2025}
+
+\begin{document}
+
+% Cover page (1 page)
+
+% Each document submitted should carry a single cover page containing no more than the title, the contact person(s) and an abstract. 
+\begin{minipage}{\textwidth}
+\maketitle
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+Instructions on EPPSU input on \href{https://indico.cern.ch/event/1439855/page/35202-guidelines}{https://indico.cern.ch/event/1439855/page/35202-guidelines}
+\end{minipage}
+\newpage
+
+\include{executive_summary}
+\newpage
+
+\include{extensive_discussion}
+\newpage
+
+\appendix
+
+\include{survey_plots}
+% \addcontentsline{toc}{section}{WG skeletons/table of contents}
+
+% %\include{WG_skeletons/communicating_importance_particle_physics}
+% \include{WG_skeletons/future_colliders}
+% \include{WG_skeletons/future_experiments_beyond_colliders}
+% \include{WG_skeletons/career_prospects_ecr_leadership}
+% \include{WG_skeletons/diversity_inclusion_mental_health}
+% \include{WG_skeletons/interplay_neighbouring_fields}
+
+\bibliographystyle{JHEP}
+\bibliography{biblio}
+
+\end{document}
